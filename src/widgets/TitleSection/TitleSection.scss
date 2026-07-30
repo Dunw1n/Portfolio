@@ -1,0 +1,22 @@
+.app {
+    &-secTitle {
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        margin-top: 25px;
+        align-items: center;
+
+        &-text {
+            color: #F4F4F5;
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        &-divider {
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(to right, #C084FC, #F472B6);
+            border-radius: 10px;
+        }
+    }
+}

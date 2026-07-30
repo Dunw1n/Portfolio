@@ -1,0 +1,52 @@
+.app {
+    &-welcome {
+        .structure-class {
+            background-color: #1c1c1fd3;
+            border: 1px solid #575757;
+            border-radius: 15px;
+        }
+
+        &-info {
+            padding: 30px 20px;
+            &__head {
+                display: flex;
+                align-items: center;
+                column-gap: 25px;
+                img {
+                    width: 60px;
+                }
+
+                h3 {
+                    font-size: 24px;
+                    color: white;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: #A1A1AA;
+                }
+            }
+
+            &__text {
+
+            }
+
+            &__list {
+                margin-top: 25px;
+                display: flex;
+                flex-direction: column;
+                row-gap: 15px;
+
+                p {
+                    font-size: 14px;
+                    color: #A1A1AA;
+                }
+            }
+            &__item {
+                display: flex;
+                align-items: center;
+                column-gap: 10px;
+            }
+        }
+    }
+}

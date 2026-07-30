@@ -1,0 +1,53 @@
+.app {
+    &-welcome {
+        &-title {
+            &__text {
+                font-size: 88px;
+                color: white;
+                display: flex;
+                flex-direction: column;
+
+                span {
+                    color: #C084FC;
+                }
+            }
+        }
+
+
+        &-descr {
+            font-size: 18px;
+            color: white;
+            width: 70%;
+            font-weight: 300;
+            line-height: 150%;
+        }
+
+        &-btn {
+            display: flex;
+            column-gap: 15px;
+            margin-top: 20px;
+            &__click {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 10px;
+                border-radius: 10px;
+                padding: 13px 20px;
+                font-size: 16px;
+                font-weight: 500;
+                cursor: pointer;
+                color: #F4F4F5;
+            } 
+
+            .one-button {
+                background: linear-gradient(to right, #C084FC, #F472B6);
+            }
+            .two-button {
+                background-color: #ffffff2c;
+                border: 1px solid #88888879;
+            }
+        }
+
+      
+    }
+}

@@ -1,0 +1,31 @@
+import { InfoMe } from "../../widgets/InfoMe/InfoMe"
+import { MusicTemplate } from "../../widgets/MusicTemplate/MusicTemplate";
+import { TopBlock } from "../../widgets/TopBlock/TopBlock";
+import { Animation } from "../Animation/Animation";
+import { ContentMain } from "../ContentMain/ContentMain";
+import "./Welcome.scss";
+
+export const Welcome = () => {
+    return (
+         <div className="app-welcome">
+            <div className="container">
+                <div className="app-welcome-wrapper">
+                    <div className="app-welcome-widget">
+
+                        <InfoMe/>
+                        <MusicTemplate/>
+                        <MusicTemplate/>
+
+                    </div>
+
+                    <div className="app-welcome-text">
+                        <TopBlock textContent={"Welcome to my Portfolio"}/>
+                        <ContentMain/>
+                    </div>
+                </div>
+            </div>
+
+             <Animation/>
+        </div>
+    )
+}

@@ -1,0 +1,79 @@
+.app {
+    &-projects {
+        &-card {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            // flex-direction: row-reverse;
+           
+            &__img {
+                width: 60%;
+                height: 500px;
+                border-radius: 20px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 20px;
+                    object-fit: cover;
+                }
+            }
+
+            &__content {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+            }
+
+
+            &__title {
+                font-size: 48px;
+                color: #fff;
+            }
+
+            &__subtitle {
+                font-size: 16px;
+                color: #4ADE80;
+                margin-top: 10px;
+            }
+
+
+            &__stack {
+                display: flex;
+                gap: 10px;
+                margin-top: 30px;
+
+                span {
+                    font-size: 14px;
+                    padding: 8px 15px;
+                    border-radius: 20px;
+                    background-color: #ffffff11;
+                    border: 1px solid #ffffff1e;
+                    color: #F4F4F5;
+                }
+            }
+
+            &__descr {
+                background-color: #ffffff11;
+                border: 1px solid #ffffff1e;
+                margin-top: 30px;
+                padding: 20px 30px; 
+                border-radius: 20px;
+                p {
+                    line-height: 170%;
+                    color: #A1A1AA;
+                    font-size: 16px;
+                    text-align: right;
+                    font-weight: 300;
+                }
+            }
+
+            &__links {
+                display: flex;
+                align-items: center;
+                margin-top: 35px;
+                column-gap: 15px;
+            }
+        }
+    }
+}

@@ -8,7 +8,9 @@ export const InfoMe = () => {
     return (
         <div className="app-welcome-info structure-class">
             <div className="app-welcome-info__head">
-                <img src={Avatar} alt="" />
+                <div className="app-welcome-info__avatar">
+                    <img src={Avatar} alt="" />
+                </div>
 
                 <div className="app-welcome-info__text">
                     <h3>Kirill Gulaev</h3>

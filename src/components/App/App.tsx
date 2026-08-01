@@ -1,5 +1,7 @@
 
 import { AboutMe } from '../AboutMe/AboutMe'
+import { Projects } from '../Projects/Projects'
+import { Skills } from '../Skills/Skills'
 import { Welcome } from '../Welcome/Welcome'
 import './App.scss'
 
@@ -11,6 +13,8 @@ function App() {
       <div className="app">
         <Welcome/>
         <AboutMe/>
+        <Skills/>
+        <Projects/>
       </div>
     </>
   )

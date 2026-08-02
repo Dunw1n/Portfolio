@@ -1,5 +1,6 @@
 
 import { AboutMe } from '../AboutMe/AboutMe'
+import { Awards } from '../Awards/Awards'
 import { Projects } from '../Projects/Projects'
 import { Skills } from '../Skills/Skills'
 import { Welcome } from '../Welcome/Welcome'
@@ -15,6 +16,7 @@ function App() {
         <AboutMe/>
         <Skills/>
         <Projects/>
+        <Awards/>
       </div>
     </>
   )

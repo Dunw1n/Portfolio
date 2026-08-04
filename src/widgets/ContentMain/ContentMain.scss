@@ -8,7 +8,7 @@
                 flex-direction: column;
 
                 span {
-                    color: #C084FC;
+                    color: #f884fc;
                 }
             }
         }
@@ -37,6 +37,10 @@
                 font-weight: 500;
                 cursor: pointer;
                 color: #F4F4F5;
+                transition: 0.4s all;
+                &:hover {
+                    transform: scale(1.1);
+                }
             } 
 
             .one-button {

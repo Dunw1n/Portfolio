@@ -1,12 +1,13 @@
 import { TitleSection } from "../../widgets/TitleSection/TitleSection"
 import { TopBlock } from "../../widgets/TopBlock/TopBlock"
 import PrizeIcon from "../../assets/awards-section/prize-icon.png";
-import ViewIcon from "../../assets/awards-section/Symbol.png";
 import ImageAwards from "../../assets/about-me-photo.jpg";
 
 
 
 import "./Awards.scss";
+import { CertificatesItem } from "../../widgets/CertificatesItem/CertificatesItem";
+import { CertificatesProud } from "../../widgets/CertificatesProud/CertificatesProud";
 
 export const Awards = () => {
     return (
@@ -53,52 +54,16 @@ export const Awards = () => {
                         </ul>
                     </div>
 
-                    <div className="app-awards-content">
-                        <h3>A Proud Moment</h3>
-                        <img src={ImageAwards} alt="" />
-                        <p>Receiving the design award at Ton Duc Thang University, 2023.</p>
-                    </div>
+
+                    <CertificatesProud imageProud={ImageAwards} textProud={"Receiving the design award at Ton Duc Thang University, 2023."}/>
 
 
                     <h3 className="app-awards-title">Extracurricular Certificates</h3>
 
                     <ul className="app-awards-certificates">
-                        <li className="app-awards-certificates__item">
-                            <div className="app-awards-certificates__img">
-                                <img src={ImageAwards} alt="" />
-                            </div>
-
-                            <h5 className="app-awards-certificates__title">Chứng nhận: Vibe Coding</h5>
-
-                            <button className="app-awards-certificates__view">
-                                <p>View Certificate</p>
-                                <img src={ViewIcon} alt="" />
-                            </button>
-                        </li>
-                        <li className="app-awards-certificates__item">
-                            <div className="app-awards-certificates__img">
-                                <img src={ImageAwards} alt="" />
-                            </div>
-
-                            <h5 className="app-awards-certificates__title">Chứng nhận: Xây Dựng Dự Án Cá Nhân</h5>
-
-                            <button className="app-awards-certificates__view">
-                                <p>View Certificate</p>
-                                <img src={ViewIcon} alt="" />
-                            </button>
-                        </li>
-                        <li className="app-awards-certificates__item">
-                            <div className="app-awards-certificates__img">
-                                <img src={ImageAwards} alt="" />
-                            </div>
-
-                            <h5 className="app-awards-certificates__title">Chứng nhận: Git Work Ready</h5>
-
-                            <button className="app-awards-certificates__view">
-                                <p>View Certificate</p>
-                                <img src={ViewIcon} alt="" />
-                            </button>
-                        </li>
+                        <CertificatesItem nameCertificate={"Chứng nhận: Vibe Coding"} imageCertificate={ImageAwards}/>
+                        <CertificatesItem nameCertificate={"Chứng nhận: Vibe Coding"} imageCertificate={ImageAwards}/>
+                        <CertificatesItem nameCertificate={"Chứng nhận: Vibe Coding"} imageCertificate={ImageAwards}/>
                     </ul>
 
                 </div>

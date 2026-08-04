@@ -13,8 +13,8 @@ export const Welcome = () => {
                     <div className="app-welcome-widget">
 
                         <InfoMe/>
-                        <MusicTemplate/>
-                        <MusicTemplate/>
+                        <MusicTemplate nameMusic={"Jeangle Bans"} teamMusic={"Arrow teams"}/>
+                        <MusicTemplate nameMusic={"Jeangle Bans"} teamMusic={"Arrow teams"}/>
 
                     </div>
 

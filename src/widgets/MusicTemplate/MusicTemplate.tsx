@@ -3,14 +3,20 @@ import PrewievSound from "../../assets/main-section/PreviewSound.png";
 import "./MusicTemplate.scss";
 
 
-export const MusicTemplate = () => {
+interface IMusicTemplate {
+    nameMusic: string;
+    teamMusic: string;
+}
+
+
+export const MusicTemplate = ({ nameMusic, teamMusic }: IMusicTemplate) => {
     return (
         <div className="app-welcome-musicBar structure-class">
             <div className="app-welcome-musicBar__content">
                 <img src={PrewievSound} alt="" />
                 <div className="app-welcome-musicBar__text">
-                    <h4>Jingle Bells</h4>
-                    <p>Christmas Song</p>
+                    <h4>{nameMusic}</h4>
+                    <p>{teamMusic}</p>
                 </div>
             </div>
             <div className="app-welcome-musicBar__management">

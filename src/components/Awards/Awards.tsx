@@ -12,7 +12,7 @@ export const Awards = () => {
     return (
         <div className="app-awards">
             <div className="container">
-                <div className="app-awards-wrapper">
+                <div className="app-awards-wrapper section-wrapper">
 
                     <TopBlock textContent={"Recognition & Accomplishments"}/>
                     <TitleSection textContent={"Awards & Achievements"}/>

@@ -6,12 +6,14 @@ import { Download } from "lucide-react";
 
 
 import AboutMePhoto from "../../assets/about-me-photo.jpg";
+import { AboutItem } from "../../widgets/AboutItem/AboutItem";
+import { AboutText } from "../../widgets/AboutText/AboutText";
 
 export const AboutMe = () => {
     return (
         <div className="app-about">
             <div className="container">
-                <div className="app-about-wrapper">
+                <div className="app-about-wrapper section-wrapper">
 
                     <TopBlock textContent={"My personal story"}/>
 
@@ -25,45 +27,27 @@ export const AboutMe = () => {
                         </div>
 
                         <div className="app-about-info__block">
-                            <p className="app-about-info__text">
-                                I am a dedicated Software Engineering student at Ton Duc Thang
-                                University with a deep passion for building efficient and user-friendly
-                                web solutions. My journey into programming started with a curiosity to
-                                understand how things work, and it has grown into a drive to create
-                                meaningful applications.
-                            </p>
-                            <p className="app-about-info__text">
-                                I enjoy tackling challenging problems and continuously expanding my
-                                skill set in the ever-evolving world of technology. From developing full-
-                                stack e-commerce platforms to creating fun, interactive web apps, my
-                                goal is to leverage my technical abilities to build impactful products.
-                            </p>
 
+                            <AboutText 
+                                textOne={"I am a dedicated Software Engineering student at Ton Duc Thang University with a deep passion for building efficient and user-friendly web solutions. My journey into programming started with a curiosity to understand how things work, and it has grown into a drive to create meaningful applications."} 
+                                textTwo={" I enjoy tackling challenging problems and continuously expanding my skill set in the ever-evolving world of technology. From developing full-stack e-commerce platforms to creating fun, interactive web apps, my goal is to leverage my technical abilities to build impactful products."}
+                            />
+                        
                             <ul className="app-about-info__content">
-                                <li className="app-about-info__item">
-                                    <h5>Name</h5>
-                                    <p>Gulaev Kirill</p>
-                                </li>
-                                <li className="app-about-info__item">
-                                    <h5>Email</h5>
-                                    <p>gulaevkirill899@gmail.com</p>
-                                </li>
-                                <li className="app-about-info__item">
-                                    <h5>Location</h5>
-                                    <p>Russian, Krasnodarskiy kray, Anapa</p>
-                                </li>
-                                <li className="app-about-info__item">
-                                    <h5>Availability</h5>
-                                    <p>Open to Internship</p>
-                                </li>
+                                <AboutItem label={"Name"} content={"Gulaev Kirill"}/>
+                                <AboutItem label={"Email"} content={"gulaevkirill899@gmail.com"}/>
+                                <AboutItem label={"Location"} content={"Russian, Krasnodarskiy kray, Anapa"}/>
+                                <AboutItem label={"Availability"} content={"Open to Internship"}/>
+                               
                                
                                 <li className="app-about-info__button">
                                     <button> 
                                         <p>Download Resume</p>
-                                        <Download color="white" />
+                                        <Download color="#fff" />
                                     </button>
                                 </li>
                             </ul>
+
                         </div>
 
                     </div>

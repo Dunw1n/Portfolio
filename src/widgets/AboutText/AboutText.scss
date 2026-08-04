@@ -1,0 +1,12 @@
+.app {
+    &-about {
+        &-info {
+            &__text {
+                color: #A1A1AA;
+                font-size: 16px;
+                font-weight: 300;
+                line-height: 150%;
+            }
+        }
+    }
+}

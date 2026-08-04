@@ -2,7 +2,7 @@ import { InfoMe } from "../../widgets/InfoMe/InfoMe"
 import { MusicTemplate } from "../../widgets/MusicTemplate/MusicTemplate";
 import { TopBlock } from "../../widgets/TopBlock/TopBlock";
 import { Animation } from "../Animation/Animation";
-import { ContentMain } from "../ContentMain/ContentMain";
+import { ContentMain } from "../../widgets/ContentMain/ContentMain";
 import "./Welcome.scss";
 
 export const Welcome = () => {

@@ -10,7 +10,7 @@ export const Projects = () => {
         <div className="app-projects">
             <div className="container">
 
-                <div className="app-projects-wrapper">
+                <div className="app-projects-wrapper section-wrapper">
 
                     <TopBlock textContent={"Some of my recent work"}/>
                     <TitleSection textContent={"Featured Projects"}/>

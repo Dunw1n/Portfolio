@@ -1,14 +1,6 @@
 .app {
     &-experience  {
         padding: 50px 0;
-        &-wrapper {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-
 
         &-list {
             display: flex;
@@ -29,40 +21,6 @@
             }
         }
 
-        &-item {
-            padding: 25px 50px;
-            background-color: #b9b9b911;
-            border: 1px solid #ffffff0a;
-            border-radius: 15px;
-            position: relative;
-             &::before {
-                content: "";
-                height: 14px;
-                width: 14px;
-                border-radius: 10px;
-                background-color: #C084FC;
-                position: absolute;
-                left: -57px;
-                top: -2px;
-            }
-           
-            &__title {
-                font-size: 20px;
-                font-weight: 600;
-                color: white;
-            }
-            &__subtitle {
-                font-size: 14px;
-                font-weight: 400;
-                color: #A1A1AA;
-                margin-top: 5px;
-            }
-            &__descr {
-                font-size: 16px;
-                font-weight: 300;
-                color: white;
-                margin-top: 15px;
-            }
-        }
+      
     }
 }

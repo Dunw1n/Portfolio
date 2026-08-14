@@ -1,4 +1,4 @@
-import "./AboutMe.scss";
+
 
 import { TitleSection } from "../../widgets/TitleSection/TitleSection"
 import { TopBlock } from "../../widgets/TopBlock/TopBlock"
@@ -8,6 +8,9 @@ import { Download } from "lucide-react";
 import AboutMePhoto from "../../assets/about-me-photo.jpg";
 import { AboutItem } from "../../widgets/AboutItem/AboutItem";
 import { AboutText } from "../../widgets/AboutText/AboutText";
+
+import "./AboutMe-media.scss"; 
+import "./AboutMe.scss";
 
 export const AboutMe = () => {
     return (
@@ -36,7 +39,7 @@ export const AboutMe = () => {
                             <ul className="app-about-info__content">
                                 <AboutItem label={"Name"} content={"Gulaev Kirill"}/>
                                 <AboutItem label={"Email"} content={"gulaevkirill899@gmail.com"}/>
-                                <AboutItem label={"Location"} content={"Russian, Krasnodarskiy kray, Anapa"}/>
+                                <AboutItem label={"Location"} content={"Russian, Krasnodarskiy kray"}/>
                                 <AboutItem label={"Availability"} content={"Open to Internship"}/>
                                
                                

@@ -3,7 +3,10 @@ import { MusicTemplate } from "../../widgets/MusicTemplate/MusicTemplate";
 import { TopBlock } from "../../widgets/TopBlock/TopBlock";
 import { Animation } from "../Animation/Animation";
 import { ContentMain } from "../../widgets/ContentMain/ContentMain";
+
 import "./Welcome.scss";
+import "./Welcome-media.scss";
+
 
 export const Welcome = () => {
     return (
@@ -19,7 +22,7 @@ export const Welcome = () => {
                     </div>
 
                     <div className="app-welcome-text">
-                        <TopBlock textContent={"Welcome to my Portfolio"}/>
+                        {/* <TopBlock textContent={"Добро пожаловать"}/> */}
                         <ContentMain/>
                     </div>
                 </div>

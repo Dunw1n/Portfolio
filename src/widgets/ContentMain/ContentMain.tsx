@@ -11,12 +11,13 @@ export const ContentMain = () => {
                 </h1>
             </div>
 
-            <p className="app-welcome-descr">
-                A passionate Software Engineering student specializing in
-                creating efficient, user-centric web applications.
-            </p>
-
-
+            <div className="app-welcome-descr">
+                <span>
+                    A passionate Software Engineering student specializing in 
+                    creating efficient, user-centric web applications.
+                </span>
+            </div> 
+            
             <div className="app-welcome-btn">
                 <button className="app-welcome-btn__click one-button">
                     <p>View my projects</p>

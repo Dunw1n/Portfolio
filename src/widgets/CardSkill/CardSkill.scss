@@ -11,6 +11,10 @@
             justify-content: center;
             border: 1px solid #ffffff11;
             row-gap: 10px;
+            @media (max-width: 480px) {
+                padding: 0px 15px;
+                    border-radius: 12px;
+            }
             &__content {
                 display: flex;
                 justify-content: space-between;
@@ -24,15 +28,36 @@
               
                 img {
                     border-radius: 5px;
+                    @media (max-width: 867px){
+                        width: 20px;
+                        height: 20px;
+                    }
+                    @media (max-width: 480px){
+                        width: 17px;
+                        height: 17px;
+                    }
+
                 }
                 p {
                     color: #ffffff;
+                    @media (max-width: 991px){
+                       font-size: 14px;
+                    }
+                    // @media (max-width: 480px){
+                    //    font-size: 12px;
+                    // }
                 }
             }
 
             &__count {
                 color: #A1A1AA;
                 font-weight: 400;
+                @media (max-width: 991px){
+                    font-size: 14px;
+                }
+                @media (max-width: 867px){
+                    font-size: 12px;
+                }
             }
 
 
@@ -42,6 +67,9 @@
                 border-radius: 10px;
                 background-color: #ffffff23;
                 position: relative;
+                @media (max-width: 991px){
+                    height: 8px;
+                }
                 span {
                     position: absolute;
                     // width: 85%;

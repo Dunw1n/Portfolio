@@ -33,6 +33,10 @@
             &__management {
                 display: flex;
                 gap: 20px;
+
+                svg {
+                    cursor: pointer;
+                }
             }
         }
     }

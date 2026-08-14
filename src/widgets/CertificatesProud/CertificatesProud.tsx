@@ -1,3 +1,5 @@
+import "./CertificatesProud.scss";
+
 interface ICertificatesProud {
     imageProud: string; 
     textProud: string

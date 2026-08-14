@@ -1,6 +1,5 @@
 import { TitleSection } from "../../widgets/TitleSection/TitleSection"
 import { TopBlock } from "../../widgets/TopBlock/TopBlock"
-import PrizeIcon from "../../assets/awards-section/prize-icon.png";
 import ImageAwards from "../../assets/about-me-photo.jpg";
 
 
@@ -8,6 +7,7 @@ import ImageAwards from "../../assets/about-me-photo.jpg";
 import "./Awards.scss";
 import { CertificatesItem } from "../../widgets/CertificatesItem/CertificatesItem";
 import { CertificatesProud } from "../../widgets/CertificatesProud/CertificatesProud";
+import { AwardsPrizeItem } from "../../widgets/AwardsPrizeItem/AwardsPrizeItem";
 
 export const Awards = () => {
     return (
@@ -30,27 +30,9 @@ export const Awards = () => {
                         </div>
 
                         <ul className="app-awards-prize__descr">
-                            <li className="app-awards-prize__item">
-                                <img src={PrizeIcon} alt="" width={40}/>
-                                <p>
-                                    Achieved prize in a university-wide competition with over 20 participating
-                                    teams, as part of the "Youth Pioneering Digital Transformation" initiative.
-                                </p>
-                            </li>
-                            <li className="app-awards-prize__item">
-                                <img src={PrizeIcon} alt="" width={40}/>
-                                <p>
-                                    Achieved prize in a university-wide competition with over 20 participating
-                                    teams, as part of the "Youth Pioneering Digital Transformation" initiative.
-                                </p>
-                            </li>
-                            <li className="app-awards-prize__item">
-                                <img src={PrizeIcon} alt="" width={40}/>
-                                <p>
-                                    Achieved prize in a university-wide competition with over 20 participating
-                                    teams, as part of the "Youth Pioneering Digital Transformation" initiative.
-                                </p>
-                            </li>
+                            <AwardsPrizeItem descrPrize={"Achieved prize in a university-wide competition with over 20 participating teams, as part of the 'Youth Pioneering Digital Transformation' initiative."}/>
+                            <AwardsPrizeItem descrPrize={"Achieved prize in a university-wide competition with over 20 participating teams, as part of the 'Youth Pioneering Digital Transformation' initiative."}/>
+                            <AwardsPrizeItem descrPrize={"Achieved prize in a university-wide competition with over 20 participating teams, as part of the 'Youth Pioneering Digital Transformation' initiative."}/>
                         </ul>
                     </div>
 

@@ -2,7 +2,6 @@ import "./ProjectCard.scss";
 
 
 interface IProjectCard {
-    flexDirection?: 'row' | 'row-reverse' | '';
     previewProject: string;
     nameProject: string;
     direction: string;
@@ -12,9 +11,9 @@ interface IProjectCard {
     linkHost: string;
 }
 
-export const ProjectCard = ({ flexDirection, previewProject, nameProject, direction, stack, description, linkGithub, linkHost }: IProjectCard) => {
+export const ProjectCard = ({ previewProject, nameProject, direction, stack, description, linkGithub, linkHost }: IProjectCard) => {
     return (
-        <div className="app-projects-card" style={{ flexDirection: flexDirection === "" ? "row" : flexDirection}}>
+        <div className="app-projects-card">
             <div className="app-projects-card__img">
                 <img src={previewProject} alt="" />
             </div>

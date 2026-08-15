@@ -28,7 +28,7 @@ export const Welcome = () => {
                 </div>
             </div>
 
-             <Animation/>
+             {/* <Animation/> */}
         </div>
     )
 }

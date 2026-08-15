@@ -29,7 +29,6 @@ export const Projects = () => {
                             linkHost={"http://comprehensive.com"}
                         />
                         <ProjectCard 
-                            flexDirection="row-reverse"
                             previewProject={PreviewProject}
                             nameProject={"Omacha Shop"} 
                             direction={"Web, E-commerce, Full-stack"} 

@@ -2,6 +2,9 @@
     &-projects {
         height: auto;
         padding: 40px 0;
+        @media (max-width: 480px) {
+            padding-top: 0px;
+        }
 
 
         &-list {
@@ -9,6 +12,20 @@
             display: flex;
             flex-direction: column;
             row-gap: 100px;
+            @media (max-width: 1240px) {
+                padding: 0 20px;
+            }
+            @media (max-width: 768px) {
+                padding: 0;
+                row-gap: 50px;
+            }
+            @media (max-width: 567px) {
+                padding: 0 20px;
+                margin-top: 40px;
+            }
+            @media (max-width: 420px) {
+               padding: 0;
+            }
         }
 
         &-view {
@@ -25,6 +42,11 @@
             font-size: 16px;
             cursor: pointer;
             transition: 0.4s all;
+            @media (max-width: 420px) {
+                font-size: 14px;
+                padding: 10px 20px;
+                margin-top: 40px;
+            }
             &:hover {
                 background-color: #fff;
                 color: #000;

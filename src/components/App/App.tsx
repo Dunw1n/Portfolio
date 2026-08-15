@@ -15,11 +15,11 @@ function App() {
   return (
     <>
       <div className="app">
-        <Welcome/> 
+       <Welcome/> 
         <AboutMe/>
          <Skills/>
-       {/* <Projects/>
-        <Awards/>
+        <Projects/> 
+       {/* <Awards/>
         <Experience/>
         <Blog/>
         <Footer/> */}

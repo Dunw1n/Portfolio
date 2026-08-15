@@ -6,6 +6,9 @@
         @media (max-width: 567px) {
             padding-top: 60px;
         }
+        @media (max-width: 480px) {
+            padding-top: 30px;
+        }
 
         &-list {
             display: grid;
@@ -32,6 +35,7 @@
                 @media (max-width: 480px) {
                         grid-template-rows: repeat(10, 65px);
                          gap: 7px;
+                         padding: 0 10px;
                 }
             }
         }

@@ -10,9 +10,36 @@
                 span {
                     color: #f884fc;
                 }
+
+                @media (max-width: 1240px) {
+                    font-size: 64px;
+                }
+
+                @media (max-width: 991px) {
+                    font-size: 56px;
+                    line-height: 120%; 
+                }
+                @media (max-width: 867px) {
+                    font-size: 52px;
+                    font-weight: 700;
+                }
+                @media (max-width: 867px) {
+                    align-items: center;
+                }
+                @media (max-width: 480px) {
+                    font-size: 42px;
+                }
+                @media (max-width: 420px) {
+                    font-size: 44px;
+                    margin-top: 10px;
+                }
+                @media (max-width: 380px) {
+                    font-size: 34px;
+                }
+
+                
             }
         }
-
 
         &-descr {
             font-size: 18px;
@@ -21,6 +48,25 @@
             font-weight: 300;
             line-height: 150%;
             // white-space: nowrap;
+            @media (max-width: 1240px) {
+                width: 100%;
+            }
+            @media (max-width: 991px) {
+                margin-top: 10px;
+                font-size: 16px;
+            }
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+            @media (max-width: 480px) {
+                font-size: 14px;
+            }
+            @media (max-width: 420px) {
+                font-size: 16px;
+            }
+            @media (max-width: 380px) {
+                font-size: 14px;
+            }
         }
 
         &-btn {
@@ -41,6 +87,22 @@
                 transition: 0.4s all;
                 &:hover {
                     transform: scale(1.1);
+                }
+
+                @media (max-width: 1240px) {
+                    font-size: 14px;
+                    padding: 10px 17px;
+                }
+                @media (max-width: 380px) {
+                    font-size: 12px;
+                    padding: 10px;
+                }
+               
+                svg {
+                    @media (max-width: 991px) {
+                        width: 20px;
+                        height: 20px;  
+                    }
                 }
             } 
 

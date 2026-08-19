@@ -5,7 +5,6 @@ import { Animation } from "../Animation/Animation";
 import { ContentMain } from "../../widgets/ContentMain/ContentMain";
 
 import "./Welcome.scss";
-import "./Welcome-media.scss";
 
 
 export const Welcome = () => {
@@ -22,13 +21,13 @@ export const Welcome = () => {
                     </div>
 
                     <div className="app-welcome-text">
-                        {/* <TopBlock textContent={"Добро пожаловать"}/> */}
+                        <TopBlock textContent={"Добро пожаловать"}/>
                         <ContentMain/>
                     </div>
                 </div>
             </div>
 
-             {/* <Animation/> */}
+            <Animation/>
         </div>
     )
 }

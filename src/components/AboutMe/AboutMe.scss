@@ -89,14 +89,12 @@
                     grid-template-rows: 40px 40px;
                 }
                 @media (max-width: 420px) {
-                    grid-template-rows: 40px 50px;
-                    padding: 20px 25px;
-                }
-                @media (max-width: 380px) {
                     grid-template-columns: 100%;
                     grid-template-rows: repeat(4, 50px);
+                    grid-auto-rows: 70px;
                     row-gap: 0;
                 }
+                
 
             }
 
@@ -110,9 +108,11 @@
                 @media (max-width: 1240px) {
                     margin-top: 0;
                 }
-                @media (max-width: 380px) {
+                @media (max-width: 420px) {
                     grid-column:auto;
                     grid-row: auto;
+                    height: 70%;
+                    margin-top: 5px;
                 }
                 button {
                     width: 100%;

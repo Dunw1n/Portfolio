@@ -3,6 +3,13 @@
         height: auto;
         padding: 150px 0;
 
+         @media (max-width: 1240px) {
+             padding: 100px 0;
+        }
+         @media (max-width: 567px) {
+             padding: 60px 0;
+        }
+
         &-wrapper {
             @media (max-width: 1240px) {
                 padding: 0 20px;
@@ -22,9 +29,12 @@
             margin-top: 80px;
             color: #ffffff;
             font-size: 28px;
-              @media (max-width: 867px) {
+            @media (max-width: 867px) {
                 font-size: 24px;
                 margin-top: 60px;
+            }
+            @media (max-width: 567px) {
+                font-size: 20px;
             }
         }
 

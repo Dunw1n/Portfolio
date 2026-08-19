@@ -1,5 +1,5 @@
 import { Play, Volume2 } from "lucide-react";
-import PrewievSound from "../../assets/main-section/PreviewSound.png";
+import PrewievSound from "@assets/main-section/PreviewSound.png";
 import "./MusicTemplate.scss";
 
 

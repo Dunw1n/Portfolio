@@ -1,10 +1,10 @@
 import { ArrowRight } from "lucide-react";
-import { ProjectCard } from "../../widgets/ProjectCard/ProjectCard";
-import { TitleSection } from "../../widgets/TitleSection/TitleSection";
-import { TopBlock } from "../../widgets/TopBlock/TopBlock";
+import { ProjectCard } from "@widgets/ProjectCard/ProjectCard";
+import { TitleSection } from "@widgets/TitleSection/TitleSection";
+import { TopBlock } from "@widgets/TopBlock/TopBlock";
 import "./Projects.scss";
 
-import PreviewProject from "../../assets/about-me-photo.jpg";
+import PreviewProject from "@assets/about-me-photo.jpg";
 
 
 

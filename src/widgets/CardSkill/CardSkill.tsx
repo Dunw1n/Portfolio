@@ -1,4 +1,4 @@
-import JSIcon from "../../assets/skills-section/JS-icon.svg";
+import JSIcon from "@assets/skills-section/JS-icon.svg";
 import "./CardSkill.scss";
 
 

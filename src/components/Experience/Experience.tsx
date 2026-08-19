@@ -1,6 +1,6 @@
-import { ExperienceItem } from "../../widgets/ExperienceItem/ExperienceItem";
-import { TitleSection } from "../../widgets/TitleSection/TitleSection";
-import { TopBlock } from "../../widgets/TopBlock/TopBlock";
+import { ExperienceItem } from "@widgets/ExperienceItem/ExperienceItem";
+import { TitleSection } from "@widgets/TitleSection/TitleSection";
+import { TopBlock } from "@widgets/TopBlock/TopBlock";
 import "./Experience.scss";
 
 

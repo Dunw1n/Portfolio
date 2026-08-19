@@ -1,5 +1,5 @@
 import { Calendar, GraduationCap, MapPin } from "lucide-react";
-import Avatar from "../../assets/main-section/avatar-widget.png";
+import Avatar from "@assets/main-section/avatar-widget.png";
 
 import "./InfoMe.scss";
 

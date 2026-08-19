@@ -1,12 +1,12 @@
-import { TitleSection } from "../../widgets/TitleSection/TitleSection"
-import { TopBlock } from "../../widgets/TopBlock/TopBlock"
-import ImageAwards from "../../assets/about-me-photo.jpg";
+import { TitleSection } from "@widgets/TitleSection/TitleSection"
+import { TopBlock } from "@widgets/TopBlock/TopBlock"
+import ImageAwards from "@assets/about-me-photo.jpg";
 
 
 
 import "./Awards.scss";
-import { CertificatesItem } from "../../widgets/CertificatesItem/CertificatesItem";
-import { CertificatesProud } from "../../widgets/CertificatesProud/CertificatesProud";
+import { CertificatesItem } from "@widgets/CertificatesItem/CertificatesItem";
+import { CertificatesProud } from "@widgets/CertificatesProud/CertificatesProud";
 
 export const Awards = () => {
     return (

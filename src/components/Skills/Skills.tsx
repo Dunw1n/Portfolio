@@ -1,6 +1,6 @@
 import { CardSkill } from "../../widgets/CardSkill/CardSkill";
-import { TitleSection } from "../../widgets/TitleSection/TitleSection";
-import { TopBlock } from "../../widgets/TopBlock/TopBlock";
+import { TitleSection } from "@widgets/TitleSection/TitleSection";
+import { TopBlock } from "@widgets/TopBlock/TopBlock";
 import "./Skills.scss";
 
 

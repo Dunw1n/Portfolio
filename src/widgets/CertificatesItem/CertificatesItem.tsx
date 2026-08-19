@@ -1,4 +1,4 @@
-import ViewIcon from "../../assets/awards-section/Symbol.png";
+import ViewIcon from "@assets/awards-section/Symbol.png";
 
 
 import "./CertificatesItem.scss";

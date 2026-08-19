@@ -1,10 +1,10 @@
-import { TitleSection } from "../../widgets/TitleSection/TitleSection"
-import { TopBlock } from "../../widgets/TopBlock/TopBlock"
-import ImageBlog from "../../assets/about-me-photo.jpg";
+import { TitleSection } from "@widgets/TitleSection/TitleSection"
+import { TopBlock } from "@widgets/TopBlock/TopBlock"
+import ImageBlog from "@assets/about-me-photo.jpg";
 
 
 import "./Blog.scss";
-import { BlogItem } from "../../widgets/BlogItem/BlogItem";
+import { BlogItem } from "@widgets/BlogItem/BlogItem";
 
 export const Blog = () => {
     return (

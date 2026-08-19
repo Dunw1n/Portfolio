@@ -1,12 +1,12 @@
 
-import { AboutMe } from '../AboutMe/AboutMe'
-import { Awards } from '../Awards/Awards'
-import { Blog } from '../Blog/Blog'
-import { Experience } from '../Experience/Experience'
-import { Footer } from '../Footer/Footer'
-import { Projects } from '../Projects/Projects'
-import { Skills } from '../Skills/Skills'
-import { Welcome } from '../Welcome/Welcome'
+import { AboutMe } from '@components/AboutMe/AboutMe'
+import { Awards } from '@components/Awards/Awards'
+import { Blog } from '@components/Blog/Blog'
+import { Experience } from '@components/Experience/Experience'
+import { Footer } from '@components/Footer/Footer'
+import { Projects } from '@components/Projects/Projects'
+import { Skills } from '@components/Skills/Skills'
+import { Welcome } from '@components/Welcome/Welcome';
 import './App.scss'
 
 
@@ -15,7 +15,7 @@ function App() {
   return (
     <>
       <div className="app">
-       <Welcome/> 
+        <Welcome/> 
         <AboutMe/>
         <Skills/>
         <Projects/> 

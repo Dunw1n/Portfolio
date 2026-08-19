@@ -9,7 +9,6 @@ import AboutMePhoto from "../../assets/about-me-photo.jpg";
 import { AboutItem } from "../../widgets/AboutItem/AboutItem";
 import { AboutText } from "../../widgets/AboutText/AboutText";
 
-import "./AboutMe-media.scss"; 
 import "./AboutMe.scss";
 
 export const AboutMe = () => {

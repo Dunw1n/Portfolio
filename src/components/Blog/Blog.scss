@@ -7,10 +7,18 @@
             margin-top: 50px;
             display: flex;
             justify-content: space-between;
-
-            
+             @media (max-width: 991px) {
+               flex-direction: column;
+               row-gap: 25px;
+               align-items: center;
+            }
+             
         }
 
-       
+        &-wrapper {
+            @media (max-width: 1240px) {
+                padding: 0 20px;
+            }
+        }
     }
 }

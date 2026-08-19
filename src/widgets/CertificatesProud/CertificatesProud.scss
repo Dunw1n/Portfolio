@@ -11,18 +11,40 @@
             border-radius: 15px;
             row-gap: 25px;
             width: 100%;
+            @media (max-width: 768px) {
+                padding: 30px 20px;
+            }
+            @media (max-width: 480px) {
+               row-gap: 15px;
+                padding: 30px 15px;
+            }
             h3 {
                 color: #A1A1AA;
                 font-size: 20px;
                 font-weight: 400;
+                @media (max-width: 768px) {
+                    font-size: 18px;
+                }
             }
             p {
                 color: #A1A1AA;
                 font-size: 14px;
                 font-weight: 400;
+                text-align: center;
+                @media (max-width: 768px) {
+                    font-size: 12px;
+                }
+                @media (max-width: 480px) {
+                   margin-top: 10px;
+                }
+                
             }
             img {
                 border-radius: 10px;
+                width: 90%;
+                @media (max-width: 480px) {
+                   width: 95%;
+                }
             }
         }
     }

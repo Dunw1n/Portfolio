@@ -3,18 +3,46 @@
         height: auto;
         // padding: 50px 0;
         border-top: 1px solid #242424;
+        
 
         &-wrapper {
             display: grid;
             grid-template-columns: 60% 15% 15%;
             justify-content: space-between;
             padding: 70px 0;
+            @media (max-width: 1240px) {
+               padding: 70px 20px;
+            }
+            @media (max-width: 991px) {
+              grid-template-columns: 60% 20% 20%;
+            }
+            @media (max-width: 867px) {
+                grid-template-columns: 50% 50%;
+                grid-template-rows: 140px 200px;
+                padding: 50px 0;
+                width: 100%;
+            }
+            
+
         }
 
         &-item {
             display: flex;
             flex-direction: column;
             row-gap: 15px;
+             @media (max-width: 867px) {
+                  align-items: center;
+               &:nth-child(1) {
+                    grid-row: 1 / 1;
+                    grid-column: 1 / 3;
+                    gap: 5px;
+                    
+               }
+               &:nth-child(3) {
+                    grid-row: 2 / 3;
+                    grid-column: 2 / 3;
+               }
+            }
             &__logo {
                 color: #F472B6;
                 font-size: 24px;
@@ -40,6 +68,9 @@
                 font-size: 17px;
                 color: white;
                 padding-bottom: 15px;
+                @media (max-width: 867px) {
+                    padding: 0;
+                }
             }
 
             &__descr {
@@ -48,6 +79,13 @@
                 font-size: 16px;
                 line-height: 170%;
                 color: #A1A1AA;
+                @media (max-width: 991px) {
+                    width: 70%;
+                }
+                @media (max-width: 867px) {
+                  text-align: center;
+                    width: 90%;
+                }
             }
         }
 
@@ -63,6 +101,12 @@
                 width: 20%;
                 text-align: center;
                 line-height: 170%;
+                @media (max-width: 1366px) {
+                    width: 100%;
+                }
+                @media (max-width: 867px) {
+                    font-size: 12px;
+                }
                 span {
                     font-weight: 700;
                     padding-left: 10px;

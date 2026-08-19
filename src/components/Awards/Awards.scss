@@ -1,67 +1,20 @@
 .app  {
     &-awards {
         height: auto;
-        padding: 150px;
+        padding: 150px 0;
 
-        &-prize {
-            display: flex;
-            align-items: center;
-            // justify-content: center;
-            background-color: #ffffff11;
-            border: 1px solid #ffffff1e;
-            padding: 45px 40px;
-            column-gap: 50px;
-            margin-top: 65px;
-            border-radius: 15px;
-
-            &__text {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                row-gap: 15px;
-                padding-right: 50px;
-                position: relative;
-                &::after {
-                    content: "";
-                    width: 2px;
-                    height: 100%;
-                    border-radius: 5px;
-                    background-color: #a1a1a152;
-                    position: absolute;
-                    right: -20px;
-                    top: 0;
-                }
+        &-wrapper {
+            @media (max-width: 1240px) {
+                padding: 0 20px;
             }
-
-            &__date {
-                color: #C084FC;
-                font-weight: 800;
-                font-size: 16px;
+            @media (max-width: 768px) {
+                padding: 0;
             }
-
-            &__title {
-                font-size: 28px;
-                color: white;
+            @media (max-width: 567px) {
+                padding: 0 10px;
             }
-
-            &__info {
-                text-align: right;
-                color: #a1a1a1;
-                font-size: 16px;
-            }
-
-            &__description {
-                text-align: right;
-                 color: #a1a1a1;
-                font-size: 16px;
-            }
-
-
-            &__descr {
-                display: flex;
-                flex-direction: column;
-                row-gap: 20px;
-                padding-left: 30px;
+            @media (max-width: 480px) {
+                padding: 0;
             }
         }
         
@@ -69,6 +22,10 @@
             margin-top: 80px;
             color: #ffffff;
             font-size: 28px;
+              @media (max-width: 867px) {
+                font-size: 24px;
+                margin-top: 60px;
+            }
         }
 
         &-certificates {
@@ -76,6 +33,14 @@
             display: flex;
             justify-content: space-between;
             margin-top: 50px;
+            @media (max-width: 867px) {
+                margin-top: 30px;
+            }
+            @media (max-width: 768px) {
+               flex-direction: column;
+               row-gap: 25px;
+               align-items: center;
+            }
         }
     }
 }

@@ -7,7 +7,6 @@ import ImageAwards from "../../assets/about-me-photo.jpg";
 import "./Awards.scss";
 import { CertificatesItem } from "../../widgets/CertificatesItem/CertificatesItem";
 import { CertificatesProud } from "../../widgets/CertificatesProud/CertificatesProud";
-import { AwardsPrizeItem } from "../../widgets/AwardsPrizeItem/AwardsPrizeItem";
 
 export const Awards = () => {
     return (
@@ -18,23 +17,6 @@ export const Awards = () => {
                     <TopBlock textContent={"Recognition & Accomplishments"}/>
                     <TitleSection textContent={"Awards & Achievements"}/>
 
-
-                    <div className="app-awards-prize">
-                        <div className="app-awards-prize__text">
-                            <h5 className="app-awards-prize__date">April 2023</h5>
-                            <h3 className="app-awards-prize__title">Consolation Prize</h3>
-
-                            <p className="app-awards-prize__info">'Class Website Design Competition 2023'</p>
-
-                            <p className="app-awards-prize__description">Faculty of Information Technology, Ton Duc Thang University</p>
-                        </div>
-
-                        <ul className="app-awards-prize__descr">
-                            <AwardsPrizeItem descrPrize={"Achieved prize in a university-wide competition with over 20 participating teams, as part of the 'Youth Pioneering Digital Transformation' initiative."}/>
-                            <AwardsPrizeItem descrPrize={"Achieved prize in a university-wide competition with over 20 participating teams, as part of the 'Youth Pioneering Digital Transformation' initiative."}/>
-                            <AwardsPrizeItem descrPrize={"Achieved prize in a university-wide competition with over 20 participating teams, as part of the 'Youth Pioneering Digital Transformation' initiative."}/>
-                        </ul>
-                    </div>
 
 
                     <CertificatesProud imageProud={ImageAwards} textProud={"Receiving the design award at Ton Duc Thang University, 2023."}/>

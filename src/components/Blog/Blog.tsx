@@ -13,7 +13,7 @@ export const Blog = () => {
 
                 <div className="app-blog-wrapper section-wrapper">
                         <TopBlock textContent={"Sharing my knowledge"}/>
-                        <TitleSection textContent={"From The Blog (Maintenance)"}/>
+                        <TitleSection textContent={"From The Blog"}/>
 
 
                         <ul className="app-blog-list">

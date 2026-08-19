@@ -11,9 +11,19 @@
                 align-items: center;
                 border-radius: 20px;
                 justify-content: space-between;
-                 transition: 0.4s all;
+                transition: 0.4s all;
                 &:hover {
                     box-shadow: 0px 0px 20px 5px #ffffff10;
+                }
+                @media (max-width: 867px) {
+                   padding: 15px;
+                }
+
+                @media (max-width: 768px) {
+                    width: 60%;
+                }
+                @media (max-width: 480px) {
+                    width: 80%;
                 }
             }
 
@@ -25,8 +35,11 @@
                 justify-content: center;
                 border-radius: 10px;
                 height: 300px;
+                @media (max-width: 867px) {
+                    height: 250px;
+                }
                 img {
-                    width: 50%;
+                    width: 70%;
                     height: 100%;
                     object-fit: contain;
                 }
@@ -38,6 +51,9 @@
                 color: white;
                 text-align: center;
                 line-height: 160%;
+                @media (max-width: 867px) {
+                   font-size: 16px;
+                }
             }
 
             &__view {
@@ -59,6 +75,9 @@
                 }
                 p {
                     color: white;
+                }
+                 @media (max-width: 867px) {
+                   margin-top: 20px;
                 }
             }
         }

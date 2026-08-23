@@ -123,12 +123,12 @@
             &__descr {
                 background-color: #ffffff11;
                 border: 1px solid #ffffff1e;
-                margin-top: 30px;
+                margin-top: 15px;
                 padding: 20px 30px; 
                 border-radius: 20px;
                 @media (max-width: 991px) {
                     padding: 15px 20px;
-                    margin-top: 15px;
+                    border-radius: 12px;
                 }
                 
                 p {

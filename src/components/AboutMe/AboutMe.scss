@@ -84,8 +84,8 @@
                     padding: 15px 25px;
                 }
                 @media (max-width: 867px) {
-                   grid-auto-rows: 40px;
-                   padding: 15px 25px;
+                    grid-auto-rows: 40px;
+                    padding: 15px 25px;
                     grid-template-rows: 40px 40px;
                 }
                 @media (max-width: 420px) {
@@ -93,6 +93,7 @@
                     grid-template-rows: repeat(4, 50px);
                     grid-auto-rows: 70px;
                     row-gap: 0;
+                    padding: 5px 25px;
                 }
                 
 

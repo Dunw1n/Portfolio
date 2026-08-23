@@ -25,7 +25,7 @@ export const Welcome = () => {
                         <ContentMain/>
                     </div>
                 </div>
-            </div>
+            </div> 
 
             <Animation/>
         </div>

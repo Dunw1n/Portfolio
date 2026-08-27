@@ -4,7 +4,9 @@ import { TitleSection } from "@widgets/TitleSection/TitleSection";
 import { TopBlock } from "@widgets/TopBlock/TopBlock";
 import "./Projects.scss";
 
-import PreviewProject from "@assets/about-me-photo.jpg";
+import BuildMaster from "@assets/projects-section/image-projects/BuildMaster.jpg";
+import LuxLocks from "@assets/projects-section/image-projects/LuxLocks.jpg";
+import GustoElegante from "@assets/projects-section/image-projects/GustoElegante.jpg";
 
 
 
@@ -20,29 +22,29 @@ export const Projects = () => {
 
                     <div className="app-projects-list">
                         <ProjectCard 
-                            previewProject={PreviewProject}
-                            nameProject={"Omacha Shop"} 
-                            direction={"Web, E-commerce, Full-stack"} 
-                            stack={["PHP", "MySQL", "JavaScript", "Bootstrap"]} 
-                            description={"A comprehensive toy e-commerce platform designed for a fun shopping experience and powerful admin tools."} 
+                            previewProject={BuildMaster}
+                            nameProject={"Build Master"} 
+                            direction={"Front-end, Lending-page, Pet-проект"} 
+                            stack={["CSS", "JavaScript", "Html", "Bootstrap"]} 
+                            description={"Лендинг-сайт по продаже строительных материалов. Состоит из двух страниц главная и описание каждого товара"} 
                             linkGithub={"http://comprehensive.com"} 
                             linkHost={"http://comprehensive.com"}
                         />
                         <ProjectCard 
-                            previewProject={PreviewProject}
-                            nameProject={"Omacha Shop"} 
-                            direction={"Web, E-commerce, Full-stack"} 
-                            stack={["Python", "Node", "JavaScript", "Bootstrap"]} 
-                            description={"A comprehensive toy e-commerce platform designed for a fun shopping experience and powerful admin tools."} 
+                            previewProject={LuxLocks}
+                            nameProject={"Lux Locks"} 
+                            direction={"Front-end, Multi-page, Pet-проект"} 
+                            stack={["CSS", "JavaScript", "Html"]} 
+                            description={"Информационный сайт по ухаживанию за волосами, состоящий из 4 страниц. Блог, Товары, Отзывы. Темная и светлая тема."} 
                             linkGithub={"#"} 
                             linkHost={"#"}
                         />
                         <ProjectCard 
-                            previewProject={PreviewProject}
-                            nameProject={"Omacha Shop"} 
-                            direction={"Web, E-commerce, Full-stack"} 
+                            previewProject={GustoElegante}
+                            nameProject={"Guesto Elegante"} 
+                            direction={"Front-end, Lending-page, Pet-проект"} 
                             stack={["PHP", "MySQL", "JavaScript", "Bootstrap"]} 
-                            description={"A comprehensive toy e-commerce platform designed for a fun shopping experience and powerful admin tools."} 
+                            description={"Сайт ресторана, где представлены разные виды блюд, также присутствуют несколько страниц. Темная и светлая тема. Модальные окна"} 
                             linkGithub={"#"} 
                             linkHost={"#"}
                         />

@@ -14,20 +14,20 @@ export const Awards = () => {
             <div className="container">
                 <div className="app-awards-wrapper section-wrapper">
 
-                    <TopBlock textContent={"Recognition & Accomplishments"}/>
-                    <TitleSection textContent={"Awards & Achievements"}/>
+                    <TopBlock textContent={"Достижения"}/>
+                    <TitleSection textContent={"Сертификаты и достижения"}/>
 
 
 
-                    <CertificatesProud imageProud={ImageAwards} textProud={"Receiving the design award at Ton Duc Thang University, 2023."}/>
+                    <CertificatesProud imageProud={ImageAwards} textProud={"Участник всероссийского конкурса KRIT-2024 в сфере веб-разработки"}/>
 
 
-                    <h3 className="app-awards-title">Extracurricular Certificates</h3>
+                    <h3 className="app-awards-title">Некоторые сертификаты</h3>
 
                     <ul className="app-awards-certificates">
-                        <CertificatesItem nameCertificate={"Chứng nhận: Vibe Coding"} imageCertificate={ImageAwards}/>
-                        <CertificatesItem nameCertificate={"Chứng nhận: Vibe Coding"} imageCertificate={ImageAwards}/>
-                        <CertificatesItem nameCertificate={"Chứng nhận: Vibe Coding"} imageCertificate={ImageAwards}/>
+                        <CertificatesItem nameCertificate={"Сертификат номер один"} imageCertificate={ImageAwards}/>
+                        <CertificatesItem nameCertificate={"Сертификат номер два"} imageCertificate={ImageAwards}/>
+                        <CertificatesItem nameCertificate={"Сертификат номер три"} imageCertificate={ImageAwards}/>
                     </ul>
 
                 </div>

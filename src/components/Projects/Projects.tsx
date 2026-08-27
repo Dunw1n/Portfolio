@@ -15,8 +15,8 @@ export const Projects = () => {
 
                 <div className="app-projects-wrapper section-wrapper">
 
-                    <TopBlock textContent={"Some of my recent work"}/>
-                    <TitleSection textContent={"Featured Projects"}/>
+                    <TopBlock textContent={"Мои недавние работы"}/>
+                    <TitleSection textContent={"Список проектов"}/>
 
                     <div className="app-projects-list">
                         <ProjectCard 
@@ -50,7 +50,7 @@ export const Projects = () => {
 
 
                     <button className="app-projects-view">
-                        <p>View All Projects</p>
+                        <p>Смотреть все проекты</p>
                         <ArrowRight size={20}/>
                     </button>
 

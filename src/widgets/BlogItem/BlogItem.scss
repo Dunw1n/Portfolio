@@ -59,16 +59,17 @@
                 font-size: 19px;
                 @media (max-width: 480px) {
                     margin-top: 10px;
+                    font-size: 17px;
                 }
             }
             &__descr {
                 padding: 0 20px;
-                margin-top: 20px;
+                margin-top: 10px;
                 color: #A1A1A1;
                 font-size: 14px;
                 line-height: 170%;
                 @media (max-width: 480px) {
-                    margin-top: 10px;
+                    line-height: 150%;
                 }
             }
 

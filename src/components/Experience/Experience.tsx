@@ -10,25 +10,25 @@ export const Experience = () => {
             <div className="container">
 
                 <div className="app-experience-wrapper section-wrapper">
-                    <TopBlock textContent={"My professional journey"}/>
-                    <TitleSection textContent={"Experience & Education"}/>
+                    <TopBlock textContent={"Мой профессиональный путь"}/>
+                    <TitleSection textContent={"Опыт и образование"}/>
                 </div>
 
                 <ul className="app-experience-list">
                     <ExperienceItem 
-                        title={"Bachelor of Software Engineering"} 
-                        subtitle={"Ton Duc Thang University | 2022 - 2026"} 
-                        descr={"Building a strong foundation in computer science, algorithms, and web development principles, while maintaining a GPA of 7.8/10."}
+                        title={"Прохождение образовательных курсов"} 
+                        subtitle={"Udemy | Автор: Иван Петриченко | 2022 - 2023"} 
+                        descr={"Многое время уделял прохождению курсов по созданию сайтов и в том числе SPA-приложений. Копил опыт и знания в этой сфере."}
                     />
                     <ExperienceItem 
-                        title={"Bachelor of Software Engineering"} 
-                        subtitle={"Ton Duc Thang University | 2022 - 2026"} 
-                        descr={"Building a strong foundation in computer science, algorithms, and web development principles, while maintaining a GPA of 7.8/10."}
+                        title={"О фрилансе на платформе Kwork"} 
+                        subtitle={"Фриланс | Подработка | Kwork | 2024"} 
+                        descr={"Время от времени нарабатывал опыт, создавая реальные проекты. Помогал людям реализовать их задумку и требования."}
                     />
                     <ExperienceItem 
-                        title={"Bachelor of Software Engineering"} 
-                        subtitle={"Ton Duc Thang University | 2022 - 2026"} 
-                        descr={"Building a strong foundation in computer science, algorithms, and web development principles, while maintaining a GPA of 7.8/10."}
+                        title={"Создание дизайна веб-приложений"} 
+                        subtitle={"Декстопый и мобильный дизайн | Figma | 2025-2026"} 
+                        descr={"Расширяю кругозор знаний не только в програмировании, но и в графическом дизайне, делая красивые макеты приложений."}
                     />
                 </ul>
 

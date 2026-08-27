@@ -35,7 +35,7 @@ export const BlogItem = ({ ImageBlog, stacks, titleBlog, descrBlog, linkBlog }: 
             </p>
 
             <a href={linkBlog} className="app-blog-item__link">
-                <p className="app-blog-item__link_text">Read More </p>
+                <p className="app-blog-item__link_text">Читать подробнее </p>
                 <ArrowRight color="#ffffff" size={20}/>
             </a>
         </li>

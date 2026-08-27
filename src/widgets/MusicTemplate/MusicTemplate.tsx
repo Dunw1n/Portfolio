@@ -1,15 +1,15 @@
-import { Play, Volume2 } from "lucide-react";
-import PrewievSound from "@assets/main-section/PreviewSound.png";
+import { Play, Pause, Volume2 } from "lucide-react";
 import "./MusicTemplate.scss";
 
-
 interface IMusicTemplate {
+    PrewievSound: string;
     nameMusic: string;
     teamMusic: string;
+    isActive?: boolean;
+    onPlay?: () => void;
 }
 
-
-export const MusicTemplate = ({ nameMusic, teamMusic }: IMusicTemplate) => {
+export const MusicTemplate = ({ PrewievSound, nameMusic, teamMusic, isActive, onPlay }: IMusicTemplate) => {
     return (
         <div className="app-welcome-musicBar structure-class">
             <div className="app-welcome-musicBar__content">
@@ -20,9 +20,15 @@ export const MusicTemplate = ({ nameMusic, teamMusic }: IMusicTemplate) => {
                 </div>
             </div>
             <div className="app-welcome-musicBar__management">
-                <Play color="#a1a1a1"/>
-                <Volume2 color="#a1a1a1"/>
+                <div onClick={onPlay}>
+                    {isActive ? (
+                        <Pause color="#fff" />
+                    ) : (
+                        <Play color="#a1a1a1" />
+                    )}
+                </div>
+                <Volume2 color="#a1a1a1" />
             </div>
         </div>
-    )
-}
+    );
+};

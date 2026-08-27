@@ -16,9 +16,12 @@ export const CertificatesItem = ({ nameCertificate, imageCertificate }: ICertifi
             </div>
 
             <h5 className="app-awards-certificates__title">{nameCertificate}</h5>
+            <p className="app-awards-certificates__descr">
+                Описание сертификата, за что дали где учавствовал и дата выдачи
+            </p>
 
             <button className="app-awards-certificates__view">
-                <p>View Certificate</p>
+                <p>Посмотреть сертификат</p>
                 <img src={ViewIcon} alt="" />
             </button>
         </li>

@@ -26,16 +26,16 @@ export const Skills = () => {
                     <TitleSection textContent={"Технический стек"}/>
 
                     <div className="app-skills-list">
-                        <CardSkill urlIcon={JSIcon} nameCard="JavaScript" valueWidth={15} textWidth={"15"}/>
-                        <CardSkill urlIcon={CSSIcon} nameCard="CSS" valueWidth={34} textWidth={"34"}/>
-                        <CardSkill urlIcon={HtmlIcon} nameCard="HTML5" valueWidth={23} textWidth={"23"}/>
-                        <CardSkill urlIcon={TailwindIcon} nameCard="Tailwind" valueWidth={65} textWidth={"65"}/>
-                        <CardSkill urlIcon={GithubIcon} nameCard="Github" valueWidth={7} textWidth={"7"}/>
-                        <CardSkill urlIcon={NodeIcon} nameCard="Node" valueWidth={4} textWidth={"4"}/>
-                        <CardSkill urlIcon={ReactIcon} nameCard="React" valueWidth={12} textWidth={"12"}/>
-                        <CardSkill urlIcon={TypescriptIcon} nameCard="TypeScript" valueWidth={97} textWidth={"97"}/>
-                        <CardSkill urlIcon={PythonIcon} nameCard="Python" valueWidth={43} textWidth={"43"}/>
-                        <CardSkill urlIcon={PostgresIcon} nameCard="PostgresQL" valueWidth={68} textWidth={"68"}/>
+                        <CardSkill urlIcon={JSIcon} nameCard="JavaScript" valueWidth={85} textWidth={"85"}/>
+                        <CardSkill urlIcon={CSSIcon} nameCard="CSS" valueWidth={70} textWidth={"70"}/>
+                        <CardSkill urlIcon={HtmlIcon} nameCard="HTML5" valueWidth={80} textWidth={"80"}/>
+                        <CardSkill urlIcon={TailwindIcon} nameCard="Tailwind" valueWidth={50} textWidth={"50"}/>
+                        <CardSkill urlIcon={GithubIcon} nameCard="Github" valueWidth={75} textWidth={"75"}/>
+                        <CardSkill urlIcon={NodeIcon} nameCard="Node" valueWidth={55} textWidth={"55"}/>
+                        <CardSkill urlIcon={ReactIcon} nameCard="React" valueWidth={80} textWidth={"80"}/>
+                        <CardSkill urlIcon={TypescriptIcon} nameCard="TypeScript" valueWidth={85} textWidth={"85"}/>
+                        <CardSkill urlIcon={PythonIcon} nameCard="Python" valueWidth={25} textWidth={"25"}/>
+                        <CardSkill urlIcon={PostgresIcon} nameCard="PostgresQL" valueWidth={50} textWidth={"50"}/>
                     </div>
 
                </div>

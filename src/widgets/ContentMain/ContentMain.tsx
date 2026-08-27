@@ -6,26 +6,25 @@ export const ContentMain = () => {
         <>
             <div className="app-welcome-title">
                 <h1 className="app-welcome-title__text">
-                    Building Digital
-                    <span>Experiences</span>
+                    Портфолио 
+                    <span>разработчика</span>
                 </h1>
             </div>
 
             <div className="app-welcome-descr">
                 <span>
-                    A passionate Software Engineering student specializing in 
-                    creating efficient, user-centric web applications.
+                    Увлеченный студент, изучающий программную инженерию и специализирующийся на создании эффективных, ориентированных на пользователя веб-приложений.
                 </span>
             </div> 
             
             <div className="app-welcome-btn">
                 <button className="app-welcome-btn__click one-button">
-                    <p>View my projects</p>
+                    <p>К проектам</p>
                     <ArrowRight />
                 </button>
 
                 <button className="app-welcome-btn__click two-button">
-                    <p>Get in touch</p>
+                    <p>Связаться</p>
                 </button>
             </div>
 

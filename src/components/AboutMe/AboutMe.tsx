@@ -17,9 +17,9 @@ export const AboutMe = () => {
             <div className="container">
                 <div className="app-about-wrapper section-wrapper">
 
-                    <TopBlock textContent={"My personal story"}/>
+                    <TopBlock textContent={"Моя личная история"}/>
 
-                    <TitleSection textContent={"About Me"}/>
+                    <TitleSection textContent={"Обо мне"}/>
 
 
                     <div className="app-about-info">
@@ -31,20 +31,20 @@ export const AboutMe = () => {
                         <div className="app-about-info__block">
 
                             <AboutText 
-                                textOne={"I am a dedicated Software Engineering student at Ton Duc Thang University with a deep passion for building efficient and user-friendly web solutions. My journey into programming started with a curiosity to understand how things work, and it has grown into a drive to create meaningful applications."} 
-                                textTwo={" I enjoy tackling challenging problems and continuously expanding my skill set in the ever-evolving world of technology. From developing full-stack e-commerce platforms to creating fun, interactive web apps, my goal is to leverage my technical abilities to build impactful products."}
+                                textOne={"Я учусь на факультете разработки программного обеспечения и очень увлечен созданием эффективных и удобных веб-решений. Мое увлечение программированием началось с желания понять, как все устроено, и переросло в стремление создавать полезные приложения."} 
+                                textTwo={"Мне нравится решать сложные задачи и постоянно совершенствовать свои навыки в постоянно развивающемся мире технологий. Моя цель — использовать свои технические способности для создания эффективных продуктов, будь то разработка полнофункциональных платформ для электронной коммерции или создание увлекательных интерактивных веб-приложений."}
                             />
                         
                             <ul className="app-about-info__content">
-                                <AboutItem label={"Name"} content={"Gulaev Kirill"}/>
-                                <AboutItem label={"Email"} content={"gulaevkirill899@gmail.com"}/>
-                                <AboutItem label={"Location"} content={"Russian, Krasnodarskiy kray"}/>
-                                <AboutItem label={"Availability"} content={"Open to Internship"}/>
+                                <AboutItem label={"Мое имя"} content={"Гуляев Кирилл"}/>
+                                <AboutItem label={"Моя почта"} content={"gulaevkirill899@gmail.com"}/>
+                                <AboutItem label={"Нахожусь"} content={"Краснодарский края, Анапа"}/>
+                                <AboutItem label={"Статус"} content={"В поиске вакансии"}/>
                                
                                
                                 <li className="app-about-info__button">
                                     <button> 
-                                        <p>Download Resume</p>
+                                        <p>Скачать резюме</p>
                                         <Download color="#fff" />
                                     </button>
                                 </li>

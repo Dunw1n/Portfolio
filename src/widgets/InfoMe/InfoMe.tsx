@@ -13,23 +13,23 @@ export const InfoMe = () => {
                 </div>
 
                 <div className="app-welcome-info__text">
-                    <h3>Kirill Gulaev</h3>
-                    <p>Full-stack Web Developer</p>
+                    <h3>Гуляев Кирилл</h3>
+                    <p>Full-stack разрабочик</p>
                 </div>
             </div>
 
             <div className="app-welcome-info__list">
                 <ul className="app-welcome-info__item">
                     <MapPin color="#A1A1AA"/>
-                    <p>Russian, Krasnodar</p>
+                    <p>Россия, Краснодарский край, Анапа</p>
                 </ul>
                 <ul className="app-welcome-info__item">
                     <Calendar color="#A1A1AA"/>
-                    <p>Experience development 5 years</p>
+                    <p>Опыт в сфере более 4-х лет</p>
                 </ul>
                 <ul className="app-welcome-info__item">
                     <GraduationCap color="#A1A1AA"/>
-                     <p>Russian, Krasnodar</p>
+                     <p>Факультет разработки программного обеспечения</p>
                 </ul>
             </div>
         </div>

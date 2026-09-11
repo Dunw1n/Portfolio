@@ -1,6 +1,6 @@
 import { TitleSection } from "@widgets/TitleSection/TitleSection"
 import { TopBlock } from "@widgets/TopBlock/TopBlock"
-import ImageAwards from "@assets/about-me-photo.jpg";
+import ImageAwards from "@assets/KRIT.jpg";
 
 
 

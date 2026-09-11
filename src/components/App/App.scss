@@ -12,6 +12,7 @@
     width: 100%;
     height: auto;
     background-color: #121212;
+    position: relative;
 }
 
 .container {
@@ -65,9 +66,9 @@ ol, ul {
 
 a {
     text-decoration: none;
-    &:hover {
-        text-decoration: underline;
-    }
+    // &:hover {
+    //     text-decoration: underline;
+    // }
 }
 
 .section-wrapper {

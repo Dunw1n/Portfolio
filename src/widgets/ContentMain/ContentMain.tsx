@@ -18,14 +18,14 @@ export const ContentMain = () => {
             </div> 
             
             <div className="app-welcome-btn">
-                <button className="app-welcome-btn__click one-button">
-                    <p>К проектам</p>
+                <a href="#projects" className="app-welcome-btn__click one-button">
+                    <p>К моим проектам</p>
                     <ArrowRight />
-                </button>
+                </a>
 
-                <button className="app-welcome-btn__click two-button">
-                    <p>Связаться</p>
-                </button>
+                <a href="#about" className="app-welcome-btn__click two-button">
+                    <p>Связаться со мной</p>
+                </a>
             </div>
 
 

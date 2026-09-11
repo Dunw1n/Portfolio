@@ -13,7 +13,7 @@ import "./AboutMe.scss";
 
 export const AboutMe = () => {
     return (
-        <div className="app-about">
+        <div className="app-about" id="about">
             <div className="container">
                 <div className="app-about-wrapper section-wrapper">
 
@@ -37,7 +37,7 @@ export const AboutMe = () => {
                         
                             <ul className="app-about-info__content">
                                 <AboutItem label={"Мое имя"} content={"Гуляев Кирилл"}/>
-                                <AboutItem label={"Моя почта"} content={"gulaevkirill899@gmail.com"}/>
+                                <AboutItem label={"Моя почта"} content={"k1.guliaev@yandex.ru"}/>
                                 <AboutItem label={"Нахожусь"} content={"Краснодарский край, Анапа"}/>
                                 <AboutItem label={"Статус"} content={"В поиске вакансии"}/>
                                

@@ -1,13 +1,9 @@
 
-import { AboutMe } from '@components/AboutMe/AboutMe'
-import { Awards } from '@components/Awards/Awards'
-import { Blog } from '@components/Blog/Blog'
-import { Experience } from '@components/Experience/Experience'
-import { Footer } from '@components/Footer/Footer'
-import { Projects } from '@components/Projects/Projects'
-import { Skills } from '@components/Skills/Skills'
-import { Welcome } from '@components/Welcome/Welcome';
 import './App.scss'
+import { Routes, Route } from 'react-router-dom'
+import Home from '@pages/Home/Home'
+import { Blog } from '@pages/Blog/Blog'
+import { Footer } from '../Footer/Footer'
 
 
 
@@ -15,14 +11,13 @@ function App() {
   return (
     <>
       <div className="app">
-        <Welcome/> 
-        <AboutMe/>
-        <Skills/>
-        <Projects/> 
-        <Awards/> 
-        <Experience/>
-        <Blog/>
-        <Footer/>
+          <Routes>
+            <Route path={"/"} element={ <Home/> } />
+            <Route path={"/admin"} element={ <Home/> } />
+            <Route path={"/blog"} element={ <Blog/> } />
+          </Routes>
+
+          <Footer/>
       </div>
     </>
   )

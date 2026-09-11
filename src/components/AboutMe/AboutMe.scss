@@ -91,6 +91,9 @@
                     padding: 15px 25px;
                     grid-template-rows: 40px 40px;
                 }
+                @media (max-width: 567px) {
+                    grid-auto-rows: 70px;
+                }
                 @media (max-width: 420px) {
                     grid-template-columns: 100%;
                     grid-template-rows: repeat(4, 50px);
@@ -112,11 +115,17 @@
                 @media (max-width: 1240px) {
                     margin-top: 0;
                 }
-                @media (max-width: 420px) {
+                @media (max-width: 567px) {
+                    // grid-column:auto;
+                    // grid-row: auto;
+                    height: 65%;
+                    margin-top: 15px;
+                }
+                @media (max-width: 480px) {
                     grid-column:auto;
                     grid-row: auto;
-                    height: 70%;
                     margin-top: 5px;
+                    height: 70%;
                 }
                 button {
                     width: 100%;

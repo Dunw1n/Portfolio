@@ -18,7 +18,7 @@ import "./Skills.scss";
 
 export const Skills = () => {
     return (
-        <div className="app-skills">
+        <div className="app-skills" id="skills">
             <div className="container">
                <div className="app-skills-wrapper section-wrapper">
 

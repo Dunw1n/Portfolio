@@ -12,7 +12,7 @@ import GustoElegante from "@assets/projects-section/image-projects/GustoElegante
 
 export const Projects = () => {
     return (
-        <div className="app-projects">
+        <div className="app-projects" id="projects">
             <div className="container">
 
                 <div className="app-projects-wrapper section-wrapper">
@@ -27,8 +27,8 @@ export const Projects = () => {
                             direction={"Front-end, Lending-page, Pet-проект"} 
                             stack={["CSS", "JavaScript", "Html", "Bootstrap"]} 
                             description={"Лендинг-сайт по продаже строительных материалов. Состоит из двух страниц главная и описание каждого товара"} 
-                            linkGithub={"http://comprehensive.com"} 
-                            linkHost={"http://comprehensive.com"}
+                            linkGithub={"https://dunw1n.github.io/BuildMaster/"} 
+                            linkHost={"https://dunw1n.github.io/BuildMaster/"}
                         />
                         <ProjectCard 
                             previewProject={LuxLocks}
@@ -36,8 +36,8 @@ export const Projects = () => {
                             direction={"Front-end, Multi-page, Pet-проект"} 
                             stack={["CSS", "JavaScript", "Html"]} 
                             description={"Информационный сайт по ухаживанию за волосами, состоящий из 4 страниц. Блог, Товары, Отзывы. Темная и светлая тема."} 
-                            linkGithub={"#"} 
-                            linkHost={"#"}
+                            linkGithub={"https://dunw1n.github.io/LuxLocks/"} 
+                            linkHost={"https://dunw1n.github.io/LuxLocks/"}
                         />
                         <ProjectCard 
                             previewProject={GustoElegante}
@@ -45,8 +45,8 @@ export const Projects = () => {
                             direction={"Front-end, Lending-page, Pet-проект"} 
                             stack={["PHP", "MySQL", "JavaScript", "Bootstrap"]} 
                             description={"Сайт ресторана, где представлены разные виды блюд, также присутствуют несколько страниц. Темная и светлая тема. Модальные окна"} 
-                            linkGithub={"#"} 
-                            linkHost={"#"}
+                            linkGithub={"https://dunw1n.github.io/GustoElegante/"} 
+                            linkHost={"https://dunw1n.github.io/GustoElegante/"}
                         />
                     </div>
 

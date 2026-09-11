@@ -55,7 +55,7 @@ export const Welcome = () => {
   };
 
   return (
-    <div className="app-welcome">
+    <div className="app-welcome" id="main">
       <div className="container">
         <div className="app-welcome-wrapper">
           <div className="app-welcome-widget">

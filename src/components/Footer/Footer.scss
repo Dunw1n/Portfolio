@@ -11,9 +11,10 @@
             padding: 70px 0;
             @media (max-width: 1240px) {
                padding: 70px 20px;
+               grid-template-columns: 60% 20% 20%;
             }
             @media (max-width: 991px) {
-              grid-template-columns: 60% 20% 20%;
+                grid-template-columns: 50% 20% 20%;
             }
             @media (max-width: 867px) {
                 grid-template-columns: 50% 50%;
@@ -61,14 +62,15 @@
                 display: flex;
                 column-gap: 10px;
                 align-items: center;
-                
+                color: #A1A1A1;
+          
                 p {
                     font-size: 16px;
                     color: #A1A1AA;
                     font-weight: 300;
                     @media (max-width: 420px) {
-                    font-size: 14px;
-                }
+                        font-size: 14px;
+                    }
                 }
             }
 
@@ -90,6 +92,9 @@
                 font-size: 16px;
                 line-height: 170%;
                 color: #A1A1AA;
+                @media (max-width: 1240px) {
+                    width: 60%;
+                }
                 @media (max-width: 991px) {
                     width: 70%;
                 }

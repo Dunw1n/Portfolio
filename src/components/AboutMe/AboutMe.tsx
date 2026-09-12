@@ -38,7 +38,7 @@ export const AboutMe = () => {
                             <ul className="app-about-info__content">
                                 <AboutItem label={"Мое имя"} content={"Гуляев Кирилл"}/>
                                 <AboutItem label={"Моя почта"} content={"k1.guliaev@yandex.ru"}/>
-                                <AboutItem label={"Нахожусь"} content={"Краснодарский край, Анапа"}/>
+                                <AboutItem label={"Телефон"} content={"+7 (937) 830-04-86"}/>
                                 <AboutItem label={"Статус"} content={"В поиске вакансии"}/>
                                
                                

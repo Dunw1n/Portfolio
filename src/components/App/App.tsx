@@ -2,8 +2,8 @@
 import './App.scss'
 import { Routes, Route } from 'react-router-dom'
 import Home from '@pages/Home/Home'
-import { Blog } from '@pages/Blog/Blog'
 import { Footer } from '../Footer/Footer'
+import { NotFound } from '@pages/NotFound/NotFound'
 
 
 
@@ -14,7 +14,7 @@ function App() {
           <Routes>
             <Route path={"/"} element={ <Home/> } />
             <Route path={"/admin"} element={ <Home/> } />
-            <Route path={"/blog"} element={ <Blog/> } />
+            <Route path={"/*"} element={ <NotFound/> } />
           </Routes>
 
           <Footer/>

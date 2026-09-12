@@ -1,0 +1,62 @@
+.app {
+    &-notfound {
+        padding: 200px 0;
+
+        &-wrapper {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            h2 {
+                font-size: 112px;
+                color: white;
+                @media  (max-width: 768px) {
+                    font-size: 96px;
+                }
+            }
+
+            h4 {
+                font-size: 20px;
+                color: white;
+                font-weight: 400;
+                margin-top: 20px;
+                text-align: center;
+                 @media  (max-width: 992px) {
+                    font-size: 16px;
+                }
+            }
+
+            p {
+                width: 40%;
+                text-align: center;
+                color: #a1a1a1;
+                margin-top: 5px;
+                @media  (max-width: 992px) {
+                    width: 100%;
+                    font-size: 14px;
+                }
+            }
+
+            a {
+                border-radius: 50px;
+                padding: 12px 20px;
+                color: #000;
+                cursor: pointer;
+                border: 1px solid #00000000;
+                background: #fff;
+                font-size: 16px;
+                margin-top: 25px;
+                font-weight: 500;
+                transition: 0.3s ease-in-out;
+                @media  (max-width: 768px) {
+                    font-size: 14px;
+                }
+                &:hover {
+                    background-color: #ffffff00;
+                    color: white;
+                    border: 1px solid #fff;
+                }
+            }
+        }
+    }
+}

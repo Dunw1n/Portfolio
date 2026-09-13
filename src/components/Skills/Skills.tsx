@@ -50,7 +50,7 @@ export const Skills = () => {
                 transition={{ duration: 0.6, ease: "easeInOut" }}
               >
                 <CardSkill
-                  urlIcon={`@assets/skills-section/${item.urlIcon}`}
+                  urlIcon={`../../assets/skills-section/${item.urlIcon}`}
                   nameCard={item.nameCard}
                   valueWidth={item.valueWidth}
                 />

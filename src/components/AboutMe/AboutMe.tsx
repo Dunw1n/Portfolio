@@ -10,6 +10,7 @@ import { AboutItem } from "../../widgets/AboutItem/AboutItem";
 import { AboutText } from "../../widgets/AboutText/AboutText";
 
 import "./AboutMe.scss";
+import { motion } from "framer-motion"
 
 export const AboutMe = () => {
     return (
@@ -24,9 +25,9 @@ export const AboutMe = () => {
 
                     <div className="app-about-info">
 
-                        <div className="app-about-info__image">
+                        <motion.div  initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeInOut' }} className="app-about-info__image">
                             <img src={AboutMePhoto} alt="My Photo" />
-                        </div>
+                        </motion.div>
 
                         <div className="app-about-info__block">
 
@@ -35,20 +36,20 @@ export const AboutMe = () => {
                                 textTwo={"Мне нравится решать сложные задачи и постоянно совершенствовать свои навыки в постоянно развивающемся мире технологий. Моя цель — использовать свои технические способности для создания эффективных продуктов, будь то разработка полнофункциональных платформ для электронной коммерции или создание увлекательных интерактивных веб-приложений."}
                             />
                         
-                            <ul className="app-about-info__content">
+                            <motion.ul initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeInOut' }} className="app-about-info__content">
                                 <AboutItem label={"Мое имя"} content={"Гуляев Кирилл"}/>
                                 <AboutItem label={"Моя почта"} content={"k1.guliaev@yandex.ru"}/>
                                 <AboutItem label={"Телефон"} content={"+7 (937) 830-04-86"}/>
                                 <AboutItem label={"Статус"} content={"В поиске вакансии"}/>
                                
                                
-                                <li className="app-about-info__button">
+                                <motion.li initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: 'easeInOut' }} className="app-about-info__button">
                                     <button> 
                                         <p>Скачать резюме</p>
                                         <Download color="#fff" />
                                     </button>
-                                </li>
-                            </ul>
+                                </motion.li>
+                            </motion.ul>
 
                         </div>
 

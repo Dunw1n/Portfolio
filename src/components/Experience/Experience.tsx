@@ -2,9 +2,31 @@ import { ExperienceItem } from "@widgets/ExperienceItem/ExperienceItem";
 import { TitleSection } from "@widgets/TitleSection/TitleSection";
 import { TopBlock } from "@widgets/TopBlock/TopBlock";
 import "./Experience.scss";
+import { useEffect, useState } from "react";
 
 
 export const Experience = () => {
+     const [data, setData] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+        try {
+            const response = await fetch('https://2970b491b97aa94b.mokky.dev/Experience');
+            const data = await response.json();
+
+            if (!response.ok) {
+            throw new Error(data.message || 'Something went wrong');
+            }
+
+            setData(data);
+        } catch (error) {
+            console.error('Error fetching:', error.message);
+        }
+        };
+
+        fetchData();
+    }, []);
+
     return (
         <div className="app-experience">
             <div className="container">
@@ -15,21 +37,14 @@ export const Experience = () => {
                 </div>
 
                 <ul className="app-experience-list">
-                    <ExperienceItem 
-                        title={"Прохождение образовательных курсов"} 
-                        subtitle={"Udemy | Автор: Иван Петриченко | 2022 - 2023"} 
-                        descr={"Многое время уделял прохождению курсов по созданию сайтов и в том числе SPA-приложений. Копил опыт и знания в этой сфере."}
-                    />
-                    <ExperienceItem 
-                        title={"О фрилансе на платформе Kwork"} 
-                        subtitle={"Фриланс | Подработка | Kwork | 2024"} 
-                        descr={"Время от времени нарабатывал опыт, создавая реальные проекты. Помогал людям реализовать их задумку и требования."}
-                    />
-                    <ExperienceItem 
-                        title={"Создание дизайна веб-приложений"} 
-                        subtitle={"Декстопый и мобильный дизайн | Figma | 2025-2026"} 
-                        descr={"Расширяю кругозор знаний не только в програмировании, но и в графическом дизайне, делая красивые макеты приложений."}
-                    />
+                    {data.map((item) => (
+                        <ExperienceItem 
+                            key={item.id}
+                            title={item.title} 
+                            subtitle={item.subtitle} 
+                            descr={item.descr}
+                        />
+                    ))}
                 </ul>
 
             </div>

@@ -8,6 +8,7 @@ import BuildMaster from "@assets/projects-section/image-projects/BuildMaster.jpg
 import LuxLocks from "@assets/projects-section/image-projects/LuxLocks.jpg";
 import GustoElegante from "@assets/projects-section/image-projects/GustoElegante.jpg";
 
+import { motion } from "framer-motion";
 
 
 export const Projects = () => {
@@ -21,33 +22,42 @@ export const Projects = () => {
                     <TitleSection textContent={"Список проектов"}/>
 
                     <div className="app-projects-list">
-                        <ProjectCard 
-                            previewProject={BuildMaster}
-                            nameProject={"Build Master"} 
-                            direction={"Front-end, Lending-page, Pet-проект"} 
-                            stack={["CSS", "JavaScript", "Html", "Bootstrap"]} 
-                            description={"Лендинг-сайт по продаже строительных материалов. Состоит из двух страниц главная и описание каждого товара"} 
-                            linkGithub={"https://dunw1n.github.io/BuildMaster/"} 
-                            linkHost={"https://dunw1n.github.io/BuildMaster/"}
-                        />
-                        <ProjectCard 
-                            previewProject={LuxLocks}
-                            nameProject={"Lux Locks"} 
-                            direction={"Front-end, Multi-page, Pet-проект"} 
-                            stack={["CSS", "JavaScript", "Html"]} 
-                            description={"Информационный сайт по ухаживанию за волосами, состоящий из 4 страниц. Блог, Товары, Отзывы. Темная и светлая тема."} 
-                            linkGithub={"https://dunw1n.github.io/LuxLocks/"} 
-                            linkHost={"https://dunw1n.github.io/LuxLocks/"}
-                        />
-                        <ProjectCard 
-                            previewProject={GustoElegante}
-                            nameProject={"Guesto Elegante"} 
-                            direction={"Front-end, Lending-page, Pet-проект"} 
-                            stack={["PHP", "MySQL", "JavaScript", "Bootstrap"]} 
-                            description={"Сайт ресторана, где представлены разные виды блюд, также присутствуют несколько страниц. Темная и светлая тема. Модальные окна"} 
-                            linkGithub={"https://dunw1n.github.io/GustoElegante/"} 
-                            linkHost={"https://dunw1n.github.io/GustoElegante/"}
-                        />
+                        <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeInOut' }}>
+                            <ProjectCard 
+                                previewProject={BuildMaster}
+                                nameProject={"Build Master"} 
+                                direction={"Front-end, Lending-page, Pet-проект"} 
+                                stack={["CSS", "JavaScript", "Html", "Bootstrap"]} 
+                                description={"Лендинг-сайт по продаже строительных материалов. Состоит из двух страниц главная и описание каждого товара"} 
+                                linkGithub={"https://dunw1n.github.io/BuildMaster/"} 
+                                linkHost={"https://dunw1n.github.io/BuildMaster/"}
+                            />
+                        </motion.div>
+
+                        <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeInOut' }}>
+                            <ProjectCard 
+                                previewProject={LuxLocks}
+                                nameProject={"Lux Locks"} 
+                                direction={"Front-end, Multi-page, Pet-проект"} 
+                                stack={["CSS", "JavaScript", "Html"]} 
+                                description={"Информационный сайт по ухаживанию за волосами, состоящий из 4 страниц. Блог, Товары, Отзывы. Темная и светлая тема."} 
+                                linkGithub={"https://dunw1n.github.io/LuxLocks/"} 
+                                linkHost={"https://dunw1n.github.io/LuxLocks/"}
+                            />
+                        </motion.div>
+
+                        <motion.div initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: 'easeInOut' }}>
+
+                            <ProjectCard 
+                                previewProject={GustoElegante}
+                                nameProject={"Guesto Elegante"} 
+                                direction={"Front-end, Lending-page, Pet-проект"} 
+                                stack={["PHP", "MySQL", "JavaScript", "Bootstrap"]} 
+                                description={"Сайт ресторана, где представлены разные виды блюд, также присутствуют несколько страниц. Темная и светлая тема. Модальные окна"} 
+                                linkGithub={"https://dunw1n.github.io/GustoElegante/"} 
+                                linkHost={"https://dunw1n.github.io/GustoElegante/"}
+                            />
+                        </motion.div>
                     </div>
 
 

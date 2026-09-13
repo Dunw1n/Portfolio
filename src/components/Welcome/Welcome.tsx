@@ -12,6 +12,9 @@ import PrewievNearLight from "@assets/sounds/logotypes/NearLightLogo.jpg";
 import PrewievLoom from "@assets/sounds/logotypes/LoomLogo.jpg";
 
 
+import { motion } from "framer-motion";
+
+
 import './Welcome.scss';
 
 export const Welcome = () => {
@@ -60,24 +63,33 @@ export const Welcome = () => {
         <div className="app-welcome-wrapper">
           <div className="app-welcome-widget">
             <InfoMe />
-            <MusicTemplate
-              isActive={activeTrack === trackOne && isPlaying}
-              PrewievSound={PrewievNearLight}
-              onPlay={() => togglePlay(trackOne)}
-              nameMusic="Near Light"
-              teamMusic="Olafur Arnalds"
-            />
-            <MusicTemplate
-              isActive={activeTrack === trackTwo && isPlaying}
-              PrewievSound={PrewievLoom}
-              onPlay={() => togglePlay(trackTwo)}
-              nameMusic="Loom"
-              teamMusic="Olafur Arnalds, Bonodo"
-            />
+
+            <motion.div  initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeInOut' }}>
+              <MusicTemplate
+                isActive={activeTrack === trackOne && isPlaying}
+                PrewievSound={PrewievNearLight}
+                onPlay={() => togglePlay(trackOne)}
+                nameMusic="Near Light"
+                teamMusic="Olafur Arnalds"
+              />
+            </motion.div>
+
+            <motion.div  initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeInOut' }}>
+              <MusicTemplate
+                isActive={activeTrack === trackTwo && isPlaying}
+                PrewievSound={PrewievLoom}
+                onPlay={() => togglePlay(trackTwo)}
+                nameMusic="Loom"
+                teamMusic="Olafur Arnalds, Bonodo"
+              />
+            </motion.div>
+
           </div>
 
           <div className="app-welcome-text">
-            <TopBlock textContent="Добро пожаловать" />
+            <motion.div  initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: 'easeInOut' }}>
+              <TopBlock textContent="Добро пожаловать" />
+            </motion.div>
             <ContentMain />
           </div>
         </div>

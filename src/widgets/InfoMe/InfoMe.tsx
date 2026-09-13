@@ -1,12 +1,13 @@
 import { Calendar, GraduationCap, MapPin } from "lucide-react";
 import Avatar from "@assets/main-section/avatar-widget.png";
+import {motion} from "framer-motion"
 
 import "./InfoMe.scss";
 
 
 export const InfoMe = () => {
     return (
-        <div className="app-welcome-info structure-class">
+        <motion.div  initial={{ opacity: 0, y: 50 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: 'easeInOut' }} className="app-welcome-info structure-class">
             <div className="app-welcome-info__head">
                 <div className="app-welcome-info__avatar">
                     <img src={Avatar} alt="" />
@@ -32,6 +33,6 @@ export const InfoMe = () => {
                      <p>Факультет разработки программного обеспечения</p>
                 </ul>
             </div>
-        </div>
+        </motion.div>
     )
 }

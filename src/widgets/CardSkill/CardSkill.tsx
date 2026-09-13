@@ -5,11 +5,10 @@ import "./CardSkill.scss";
 interface ICardSkill {
     valueWidth: number;
     nameCard: string;
-    textWidth: string;
     urlIcon: string;
 }
 
-export const CardSkill = ({ valueWidth, nameCard, textWidth, urlIcon }: ICardSkill) => {
+export const CardSkill = ({ valueWidth, nameCard, urlIcon }: ICardSkill) => {
     return (
         <div className="app-skills-card">
             <div className="app-skills-card__content">
@@ -17,7 +16,7 @@ export const CardSkill = ({ valueWidth, nameCard, textWidth, urlIcon }: ICardSki
                     <img src={urlIcon} alt="" />
                     <p>{nameCard}</p>
                 </div>
-                <p className="app-skills-card__count">{textWidth}%</p>
+                <p className="app-skills-card__count">{valueWidth}%</p>
             </div>
             <div className="app-skills-card__line" >
                 <span style={{ width: valueWidth + "%" }}></span>

@@ -2,21 +2,36 @@ import { CardSkill } from "../../widgets/CardSkill/CardSkill";
 import { TitleSection } from "@widgets/TitleSection/TitleSection";
 import { TopBlock } from "@widgets/TopBlock/TopBlock";
 
-import JSIcon from "@assets/skills-section/JS-icon.svg";
-import CSSIcon from "@assets/skills-section/Css-icon.svg";
-import HtmlIcon from "@assets/skills-section/Html-icon.svg";
-import TailwindIcon from "@assets/skills-section/TailwindIcon.svg";
-import GithubIcon from "@assets/skills-section/Github-icon.svg";
-import NodeIcon from "@assets/skills-section/NodeIcon.svg";
-import ReactIcon from "@assets/skills-section/ReactIcon.svg";
-import TypescriptIcon from "@assets/skills-section/TypescriptIcon.svg";
-import PythonIcon from "@assets/skills-section/Python-icon.svg";
-import PostgresIcon from "@assets/skills-section/PostgresIcon.svg";
+
+import { motion } from "framer-motion"
 
 import "./Skills.scss";
+import { useEffect, useState } from "react";
 
 
 export const Skills = () => {
+    const [skillsData, setSkillsData] = useState([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+        try {
+            const response = await fetch('https://2970b491b97aa94b.mokky.dev/Skills');
+            const data = await response.json();
+
+            if (!response.ok) {
+            throw new Error(data.message || 'Something went wrong');
+            }
+
+            setSkillsData(data);
+        } catch (error: any) {
+            console.error('Error fetching:', error.message);
+        }
+        };
+
+        fetchData();
+    }, []);
+
+
     return (
         <div className="app-skills" id="skills">
             <div className="container">
@@ -26,16 +41,12 @@ export const Skills = () => {
                     <TitleSection textContent={"Технический стек"}/>
 
                     <div className="app-skills-list">
-                        <CardSkill urlIcon={JSIcon} nameCard="JavaScript" valueWidth={85} textWidth={"85"}/>
-                        <CardSkill urlIcon={CSSIcon} nameCard="CSS" valueWidth={70} textWidth={"70"}/>
-                        <CardSkill urlIcon={HtmlIcon} nameCard="HTML5" valueWidth={80} textWidth={"80"}/>
-                        <CardSkill urlIcon={TailwindIcon} nameCard="Tailwind" valueWidth={50} textWidth={"50"}/>
-                        <CardSkill urlIcon={GithubIcon} nameCard="Github" valueWidth={75} textWidth={"75"}/>
-                        <CardSkill urlIcon={NodeIcon} nameCard="Node" valueWidth={55} textWidth={"55"}/>
-                        <CardSkill urlIcon={ReactIcon} nameCard="React" valueWidth={80} textWidth={"80"}/>
-                        <CardSkill urlIcon={TypescriptIcon} nameCard="TypeScript" valueWidth={85} textWidth={"85"}/>
-                        <CardSkill urlIcon={PythonIcon} nameCard="Python" valueWidth={25} textWidth={"25"}/>
-                        <CardSkill urlIcon={PostgresIcon} nameCard="PostgresQL" valueWidth={50} textWidth={"50"}/>
+                        {skillsData.map(item => (
+                            <motion.div key={item.id} initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, ease: 'easeInOut' }}>
+                                <CardSkill  urlIcon={`/src/assets/skills-section/${item.urlIcon}`} nameCard={item.nameCard} valueWidth={item.valueWidth}/>
+                            </motion.div>
+                        ))}
+                        
                     </div>
 
                </div>

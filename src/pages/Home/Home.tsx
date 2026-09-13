@@ -22,10 +22,6 @@ export default function Home(){
             <Projects/> 
             <Awards/> 
             <Experience/>
-<<<<<<< HEAD
-            <Blog/>
-=======
->>>>>>> c5e2ee983ad12750b2ff2e959884b427b25b3d1c
         </>
     )
 }
